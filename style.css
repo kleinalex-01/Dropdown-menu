@@ -13,17 +13,18 @@ body {
     height: 4rem;
     width: 100%;
     background-color: lightgreen;
-    display: flex;
     align-items: center;
+    position: relative;
 }
 
 #dropdown-container {
     border: black 2px solid;
     border-radius: 2rem;
-    height: 60%;
+    height: 2rem;
     width: 10rem;
     background-color: #e1e1e1;
     position: relative;
+    top: 1rem;
     left: 1rem;
 }
 
@@ -37,3 +38,25 @@ body {
     cursor: pointer;
 }
 
+#dropdown-list {
+    background-color: #e1e1e1;
+    position: relative;
+    top: 1.5rem;
+    width: 10rem;
+    height: 2rem;
+    border: black 2px solid;
+    border-radius: 1rem;
+    left: 1rem;
+    height: 10rem;
+    visibility: hidden;
+}
+
+#dropdown-list ol {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    list-style: circle;
+}
